@@ -1,6 +1,5 @@
 
 numpy==1.24.3
-python-rtmidi==2.5.0
-pywin32==306
+python-midi==0.2.4
 sounddevice==0.4.6
-pipwin==0.5.2
+pywin32==306
