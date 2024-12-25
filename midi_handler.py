@@ -1,5 +1,5 @@
 
-import midi
+import mididevice
 from event_system import EventDispatcher, MidiEvent
 import threading
 import time
@@ -15,7 +15,7 @@ class MidiHandler:
 
     def init_midi(self):
         try:
-            self.midi_in = midi.Input(0)  # Try to open the first MIDI device
+            self.midi_in = mididevice.MIDIDevice()  # Try to open the first MIDI device
             print("MIDI device connected")
             self._thread = threading.Thread(target=self._midi_polling_loop)
             self._running = True
