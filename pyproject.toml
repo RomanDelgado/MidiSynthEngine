@@ -1,0 +1,10 @@
+[project]
+name = "repl-nix-midisynthengine"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.1",
+    "python-rtmidi>=1.5.8",
+    "sounddevice>=0.5.1",
+]
